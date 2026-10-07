@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Angawey — Handmade Copper Jewellery</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Georgia', serif;
+    background: #fdf6ef;
+    color: #3a2a1e;
+    line-height: 1.6;
+  }
+  header {
+    background: linear-gradient(135deg, #b87333, #8b4513);
+    color: #fff8f0;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 2.8rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+  header p {
+    font-size: 1.1rem;
+    font-style: italic;
+    opacity: 0.95;
+  }
+  nav {
+    background: #3a2a1e;
+    padding: 12px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  nav a {
+    color: #fdf6ef;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+    font-family: sans-serif;
+  }
+  nav a:hover { color: #e8a06b; }
+  section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px 20px;
+  }
+  section h2 {
+    color: #8b4513;
+    font-size: 1.9rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .story {
+    background: #fff8f0;
+    border-left: 6px solid #b87333;
+    padding: 25px;
+    border-radius: 8px;
+    font-size: 1.05rem;
+  }
+  .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+  }
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(139, 69, 19, 0.12);
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+  }
+  .card:hover { transform: translateY(-5px); }
+  .card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+  .card-body {
+    padding: 18px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .card h3 {
+    color: #3a2a1e;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+  .card p {
+    font-size: 0.95rem;
+    color: #6b5544;
+    margin-bottom: 15px;
+    flex-grow: 1;
+  }
+  .price {
+    color: #b87333;
+    font-weight: bold;
+    font-size: 1.15rem;
+    margin-bottom: 12px;
+  }
+  .buy-btn {
+    display: block;
+    background: #25D366;
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition: background 0.2s;
+  }
+  .buy-btn:hover { background: #1da851; }
+  .makers {
+    background: #f5e6d3;
+    border-radius: 12px;
+    padding: 30px;
+    margin-top: 20px;
+  }
+  .makers p { margin-bottom: 15px; }
+  .makers a {
+    color: #8b4513;
+    font-weight: bold;
+  }
+  footer {
+    background: #3a2a1e;
+    color: #fdf6ef;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 40px;
+  }
+  footer h3 {
+    color: #e8a06b;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+  }
+  footer a {
+    color: #e8a06b;
+    text-decoration: none;
+  }
+  footer p { margin: 8px 0; }
+  @media (max-width: 600px) {
+    header h1 { font-size: 2rem; }
+    header { padding: 40px 15px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>ANGAWEY</h1>
+  <p>Handmade copper jewellery, made with love</p>
+</header>
+
+<nav>
+  <a href="#shop">Shop</a>
+  <a href="#story">Our Story</a>
+  <a href="#makers">Copper Friends</a>
+  <a href="complaints.html">Feedback</a>
+</nav>
+
+<section id="story">
+  <h2>Our Story</h2>
+  <div class="story">
+    <p>Hi, I'm the maker behind <strong>Angawey</strong>. 💛</p>
+    <p style="margin-top: 12px;">
+      I fell in love with copper — not just for its warm, glowing beauty, but for what it does for the body.
+      Copper has been worn for centuries for its health benefits, and it's one of the most versatile metals to craft with.
+      But too often, people who want copper jewellery can't find where to buy it, and small copper makers can't reach the people who'd love their work.
+    </p>
+    <p style="margin-top: 12px;">
+      So Angawey was born — a friendly little home for handmade copper jewellery, and a bridge between you and the makers who pour their hearts into every piece.
+      Every item is made by hand, with care, and shipped with love.
+    </p>
+    <p style="margin-top: 12px;"><em>Thank you for being here. It truly means the world. 🧡</em></p>
+  </div>
+</section>
+
+<section id="shop">
+  <h2>Shop the Collection</h2>
+  <p style="text-align: center; color: #6b5544;">Tap "Order on WhatsApp" to buy — quick, personal, and easy.</p>
+  <div class="products">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=600" alt="Copper ring">
+      <div class="card-body">
+        <h3>Copper Twist Ring</h3>
+        <p>Hand-hammered copper ring with a gentle twist. A little everyday glow on your finger.</p>
+        <div class="price">GHS 80</div>
+        <a class="buy-btn" href="https://wa.me/233541822359?text=Hi%20Angawey!%20I%20want%20to%20order%20the%20Copper%20Twist%20Ring%20(GHS%2080).">Order on WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600" alt="Copper earrings">
+      <div class="card-body">
+        <h3>Copper Drop Earrings</h3>
+        <p>Light, elegant, and warm. These copper drops catch the light beautifully.</p>
+        <div class="price">GHS 100</div>
+        <a class="buy-btn" href="https://wa.me/233541822359?text=Hi%20Angawey!%20I%20want%20to%20order%20the%20Copper%20Drop%20Earrings%20(GHS%20100).">Order on WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=600" alt="Copper bracelet">
+      <div class="card-body">
+        <h3>Copper Cuff Bracelet</h3>
+        <p>A classic copper cuff — believed to support wellness while looking stunning.</p>
+        <div class="price">GHS 150</div>
+        <a class="buy-btn" href="https://wa.me/233541822359?text=Hi%20Angawey!%20I%20want%20to%20order%20the%20Copper%20Cuff%20Bracelet%20(GHS%20150).">Order on WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1599643477877-530eb83abc8e?w=600" alt="Copper necklace">
+      <div class="card-body">
+        <h3>Copper Pendant Necklace</h3>
+        <p>A simple, soulful pendant on a soft cord. Wear your copper close to your heart.</p>
+        <div class="price">GHS 180</div>
+        <a class="buy-btn" href="https://wa.me/233541822359?text=Hi%20Angawey!%20I%20want%20to%20order%20the%20Copper%20Pendant%20Necklace%20(GHS%20180).">Order on WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=600" alt="Copper bangle set">
+      <div class="card-body">
+        <h3>Stacked Copper Bangles</h3>
+        <p>A set of three hand-finished bangles — wear them together or apart.</p>
+        <div class="price">GHS 200</div>
+        <a class="buy-btn" href="https://wa.me/233541822359?text=Hi%20Angawey!%20I%20want%20to%20order%20the%20Stacked%20Copper%20Bangles%20(GHS%20200).">Order on WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=600" alt="Copper jewelry set">
+      <div class="card-body">
+        <h3>Copper Gift Set</h3>
+        <p>Ring + earrings, beautifully paired. A thoughtful gift for someone you love.</p>
+        <div class="price">GHS 250</div>
+        <a class="buy-btn" href="https://wa.me/233541822359?text=Hi%20Angawey!%20I%20want%20to%20order%20the%20Copper%20Gift%20Set%20(GHS%20250).">Order on WhatsApp</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="makers">
+  <h2>Copper Makers We Love</h2>
+  <div class="makers">
+    <p>Angawey is about community, not competition. Here are other copper jewellery makers we admire — go show them some love:</p>
+    <p>🔸 <a href="#">Copper & Clay Studio</a> — earthy hand-forged copper</p>
+    <p>🔸 <a href="#">The Copper Coop</a> — bold statement copper pieces</p>
+    <p>🔸 <a href="#">Verde Copper Works</a> — patina and vintage finishes</p>
+    <p style="margin-top: 20px; font-style: italic; color: #6b5544;">
+      Are you a copper maker and want to be listed here? Email us — we'd love to connect. 💛
+    </p>
+  </div>
+</section>
+
+<footer>
+  <h3>Let's Stay Connected 🧡</h3>
+  <p>Email: <a href="mailto:alumimariska54@gmail.com">alumimariska54@gmail.com</a></p>
+  <p>WhatsApp: <a href="https://wa.me/233541822359">Message us</a></p>
+  <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.8;">
+    © 2025 Angawey · Handmade with love
+  </p>
+</footer>
+
+</body>
+</html>
