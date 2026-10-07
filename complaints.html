@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feedback — Angawey</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Georgia', serif;
+    background: #fdf6ef;
+    color: #3a2a1e;
+    line-height: 1.6;
+  }
+  header {
+    background: linear-gradient(135deg, #b87333, #8b4513);
+    color: #fff8f0;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+  header p {
+    font-size: 1rem;
+    font-style: italic;
+    opacity: 0.95;
+  }
+  nav {
+    background: #3a2a1e;
+    padding: 12px;
+    text-align: center;
+  }
+  nav a {
+    color: #fdf6ef;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+    font-family: sans-serif;
+  }
+  nav a:hover { color: #e8a06b; }
+  section {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 50px 20px;
+  }
+  section h2 {
+    color: #8b4513;
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .intro {
+    background: #fff8f0;
+    border-left: 6px solid #b87333;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    font-size: 1rem;
+  }
+  form {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(139, 69, 19, 0.12);
+  }
+  label {
+    display: block;
+    font-family: sans-serif;
+    font-size: 0.95rem;
+    color: #3a2a1e;
+    margin-bottom: 6px;
+    margin-top: 18px;
+    font-weight: bold;
+  }
+  input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    border: 1.5px solid #e0cdb6;
+    border-radius: 8px;
+    font-family: sans-serif;
+    font-size: 1rem;
+    background: #fdf6ef;
+    color: #3a2a1e;
+  }
+  input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #b87333;
+  }
+  textarea { min-height: 120px; resize: vertical; }
+  button {
+    margin-top: 25px;
+    width: 100%;
+    background: #b87333;
+    color: #fff;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  button:hover { background: #8b4513; }
+  .contact-direct {
+    margin-top: 30px;
+    text-align: center;
+    background: #f5e6d3;
+    padding: 25px;
+    border-radius: 12px;
+  }
+  .contact-direct h3 {
+    color: #8b4513;
+    margin-bottom: 12px;
+  }
+  .contact-direct a {
+    color: #8b4513;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  footer {
+    background: #3a2a1e;
+    color: #fdf6ef;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+  }
+  footer a { color: #e8a06b; text-decoration: none; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>We're Listening 🧡</h1>
+  <p>Your feedback helps Angawey grow</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="index.html#shop">Shop</a>
+  <a href="index.html#story">Our Story</a>
+</nav>
+
+<section>
+  <h2>Share Your Thoughts</h2>
+  <div class="intro">
+    <p>Whether you have a complaint, a suggestion, or just want to say hello — we truly want to hear from you.</p>
+    <p style="margin-top: 10px;">Every message is read personally, and we'll do our best to make things right. 💛</p>
+  </div>
+
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <label for="name">Your name</label>
+    <input type="text" id="name" name="name" required placeholder="e.g. Ama Mensah">
+
+    <label for="email">Your email</label>
+    <input type="email" id="email" name="email" required placeholder="you@example.com">
+
+    <label for="type">What's this about?</label>
+    <select id="type" name="type">
+      <option value="Complaint">A complaint</option>
+      <option value="Suggestion">A suggestion</option>
+      <option value="Compliment">A compliment 💛</option>
+      <option value="Other">Something else</option>
+    </select>
+
+    <label for="message">Your message</label>
+    <textarea id="message" name="message" required placeholder="Tell us what's on your mind..."></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+  <div class="contact-direct">
+    <h3>Or reach us directly</h3>
+    <p>📧 Email: <a href="mailto:alumimariska54@gmail.com">alumimariska54@gmail.com</a></p>
+    <p style="margin-top: 8px;">💬 WhatsApp: <a href="https://wa.me/233541822359">Chat with us</a></p>
+  </div>
+</section>
+
+<footer>
+  © 2025 Angawey · Made with love and copper 🧡
+</footer>
+
+</body>
+</html>
